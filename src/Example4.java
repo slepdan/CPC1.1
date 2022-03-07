@@ -8,7 +8,6 @@ public class Example4 {
     public static Rodina [] setCountry(int count){
         Scanner sc=new Scanner(System.in,"cp1251");
         Rodina[] countries = new Rodina[count];
-        sc.nextLine();
         System.out.println("Введите информацию о странах: ");
         for (int i = 0; i < countries.length; i++){
             countries[i] = new Rodina();
@@ -110,6 +109,7 @@ public class Example4 {
     }
     public static void main(String[] args){
         sc = new Scanner(System.in);
+        System.out.println("count");
         int count = sc.nextInt();
         Rodina[] countries = setCountry(count);
         showArray(countries);
